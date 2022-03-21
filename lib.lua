@@ -1,3 +1,4 @@
+local suc,err = pcall(function()
 function gets(service)
     return game:GetService(service)
 end
@@ -27,3 +28,8 @@ local hum = char.Humanoid
 local hrp = char.HumanoidRootPart
 local ws = hum.WalkSpeed
 local jp = hum.JumpPower
+end)
+
+if not suc then
+    warn("Init lib failure:",err)
+end
