@@ -24,6 +24,6 @@ local plrname = ts(plr)
 local plrdisplay = ts(plr.DisplayName)
 local char = plr.Character
 local hum = char.Humanoid
-local hrp = hum.HumanoidRootPart
+local hrp = char.HumanoidRootPart
 local ws = hum.WalkSpeed
 local jp = hum.JumpPower
